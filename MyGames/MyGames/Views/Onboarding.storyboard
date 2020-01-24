@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vy3-4G-8yQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="JU1-uz-AA9">
+            <objects>
+                <viewController id="s7o-vx-170" customClass="OnboardingViewController" customModule="MyGames_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ar-fY-dOn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboading_image" translatesAutoresizingMaskIntoConstraints="NO" id="Vrb-sq-l73" propertyAccessControl="all">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abe-OD-y23" propertyAccessControl="none">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turma Dev Apps 2018.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-Fl-zvD">
+                                <rect key="frame" x="16" y="440" width="382" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by: Eduardo Peregrino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPM-bS-AH4">
+                                <rect key="frame" x="16" y="534" width="382" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dJf-1v-4Ob" firstAttribute="trailing" secondItem="abe-OD-y23" secondAttribute="trailing" id="1ff-id-8JN"/>
+                            <constraint firstItem="GPM-bS-AH4" firstAttribute="centerX" secondItem="dJf-1v-4Ob" secondAttribute="centerX" id="4xF-RH-rUD"/>
+                            <constraint firstAttribute="bottom" secondItem="Vrb-sq-l73" secondAttribute="bottom" id="6Ub-ry-NCn"/>
+                            <constraint firstItem="Vrb-sq-l73" firstAttribute="top" secondItem="0Ar-fY-dOn" secondAttribute="top" id="8xg-rp-Hts"/>
+                            <constraint firstItem="Vrb-sq-l73" firstAttribute="trailing" secondItem="dJf-1v-4Ob" secondAttribute="trailing" id="DvA-M5-Uqo"/>
+                            <constraint firstItem="dJf-1v-4Ob" firstAttribute="trailing" secondItem="GPM-bS-AH4" secondAttribute="trailing" constant="16" id="KpZ-JH-vkM"/>
+                            <constraint firstItem="i4v-Fl-zvD" firstAttribute="centerX" secondItem="dJf-1v-4Ob" secondAttribute="centerX" id="LDI-3b-bVL"/>
+                            <constraint firstItem="Vrb-sq-l73" firstAttribute="leading" secondItem="dJf-1v-4Ob" secondAttribute="leading" id="V9D-0h-zqe"/>
+                            <constraint firstItem="dJf-1v-4Ob" firstAttribute="trailing" secondItem="i4v-Fl-zvD" secondAttribute="trailing" constant="16" id="al1-FQ-R83"/>
+                            <constraint firstItem="GPM-bS-AH4" firstAttribute="leading" secondItem="dJf-1v-4Ob" secondAttribute="leading" constant="16" id="boH-5B-PQy"/>
+                            <constraint firstItem="i4v-Fl-zvD" firstAttribute="centerY" secondItem="dJf-1v-4Ob" secondAttribute="centerY" id="eI6-gD-6m9"/>
+                            <constraint firstItem="dJf-1v-4Ob" firstAttribute="top" secondItem="abe-OD-y23" secondAttribute="top" constant="44" id="hRY-wI-2DA"/>
+                            <constraint firstItem="i4v-Fl-zvD" firstAttribute="leading" secondItem="dJf-1v-4Ob" secondAttribute="leading" constant="16" id="lrN-NI-uv5"/>
+                            <constraint firstItem="GPM-bS-AH4" firstAttribute="top" secondItem="i4v-Fl-zvD" secondAttribute="bottom" constant="67.5" id="ls9-RL-ept"/>
+                            <constraint firstItem="abe-OD-y23" firstAttribute="leading" secondItem="dJf-1v-4Ob" secondAttribute="leading" id="sIp-iO-aHQ"/>
+                            <constraint firstItem="abe-OD-y23" firstAttribute="bottom" secondItem="dJf-1v-4Ob" secondAttribute="bottom" constant="34" id="uYj-KY-RXq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dJf-1v-4Ob"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ1-Cl-vcE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="-52"/>
+        </scene>
+        <!--Onboarding Collection View Controller-->
+        <scene sceneID="BzU-cN-6ud">
+            <objects>
+                <collectionViewController id="Vy3-4G-8yQ" customClass="OnboardingCollectionViewController" customModule="MyGames_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="3bK-fr-Icv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bvq-UT-rzJ">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vy3-4G-8yQ" id="EvZ-gN-zxy"/>
+                            <outlet property="delegate" destination="Vy3-4G-8yQ" id="zjG-dh-t0R"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQv-D1-a5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="-52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboading_image" width="1280" height="959"/>
+    </resources>
+</document>
